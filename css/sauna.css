@@ -1,0 +1,11 @@
+@import url("../css/style.css");
+.row p {
+  text-align: center;
+  color: white;
+}
+
+div .images {
+  width: 350px;
+  height: 350px;
+  margin-left: 20%;
+}

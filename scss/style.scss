@@ -1,0 +1,64 @@
+@import "headerAndFooter.scss";
+
+$width: 5px;
+$colores: rgb(222, 164, 164), rgb(222, 239, 168), rgb(147, 168, 214), rgb(152, 231, 241), rgb(241, 175, 241);
+$tamanios: 32px, 29px, 26px, 23px, 20px, 18px;
+
+@function tamanio($tam){//Función para calcular el tamaño
+    @return($tam*$width);
+}
+body{//Incluir fondo en la página web
+    @include background("../images/fondo.webp");
+}
+
+
+div{//Maquetar los cuadros de los socios
+    justify-content: space-around;
+    .socio{
+        text-align: center;
+        @include caja(30px,100px,$secundary-color,rgb(255, 255, 255));
+    }
+    p{
+        font-size: tamanio(5);
+        padding: 2%;
+        color: white;
+
+
+    }
+}
+div{//Alinear los logos
+    div{
+        .logos{
+            @include imagenTam(100px, 100px);
+        }
+    }
+}
+div{//Tamaño de los botones
+    div{
+        .boton{
+            @include boton(180px, 100px);
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+h3{
+    color: white;
+    text-decoration: underline;
+}
+$contador2: 1;//Manejar los tamaños de las letras del titulo "Lista de socios"
+@each $tam in $tamanios{
+    .span#{$contador2}{
+        font-size: $tam;
+    }
+    $contador2: $contador2+1;
+}
+$contador: 1;
+@each $color in $colores{
+    .color#{$contador}{
+        color: $color;
+    }
+    $contador: $contador+1;
+}

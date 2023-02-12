@@ -1,0 +1,120 @@
+h3 {
+  text-align: center;
+}
+
+div {
+  padding: 20px;
+}
+
+div .col-12 {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  color: #f5eeee;
+  font-family: "Montserrat";
+  background-color: #2b2626;
+  height: 180px;
+  padding: 20px;
+}
+
+body {
+  background-image: url("../images/fondo.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  justify-content: space-around;
+}
+
+div .socio {
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  color: white;
+  font-family: "Montserrat";
+  background-color: #2b2626;
+  height: 100px;
+  padding: 30px;
+}
+
+div p {
+  font-size: 25px;
+  padding: 2%;
+  color: white;
+}
+
+div div .logos {
+  width: 100px;
+  height: 100px;
+}
+
+div div .boton {
+  width: 180px;
+  height: 100px;
+  padding: 20px;
+  color: #443c3c;
+  border: none;
+  border-radius: 100%;
+  background-color: black;
+  margin-left: 40%;
+  color: white;
+}
+
+div div .boton a {
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+  text-decoration: underline;
+}
+
+.span1 {
+  font-size: 32px;
+}
+
+.span2 {
+  font-size: 29px;
+}
+
+.span3 {
+  font-size: 26px;
+}
+
+.span4 {
+  font-size: 23px;
+}
+
+.span5 {
+  font-size: 20px;
+}
+
+.span6 {
+  font-size: 18px;
+}
+
+.color1 {
+  color: #dea4a4;
+}
+
+.color2 {
+  color: #deefa8;
+}
+
+.color3 {
+  color: #93a8d6;
+}
+
+.color4 {
+  color: #98e7f1;
+}
+
+.color5 {
+  color: #f1aff1;
+}

@@ -1,0 +1,52 @@
+$primary-color: rgb(245, 238, 238);
+$secundary-color: rgb(43, 38, 38);
+$font-monserrat: 'Montserrat';
+
+
+@mixin caja($padding, $height, $background, $color) {
+    justify-content: space-around;
+    align-items: center;
+    padding: $padding;
+    display: flex;
+    color: $color;
+    font-family: $font-monserrat;
+    background-color: $background;
+    height: $height;
+    padding: $padding;
+}
+
+@mixin background($rutaFoto) {
+    background-image: url($rutaFoto);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin imagenTam($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin boton($width, $height) {
+    width: $width;
+    height: $height;
+    padding: 20px;
+    color: rgb(68, 60, 60);
+    border: none;
+    border-radius: 100%;
+    background-color: black;
+    margin-left: 40%;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+div {
+    padding: 20px;
+
+    .col-12 {
+        @include caja(20px, 180px, $secundary-color, $primary-color);
+    }
+}

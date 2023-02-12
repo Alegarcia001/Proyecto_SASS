@@ -1,0 +1,19 @@
+h3 {
+  text-align: center;
+}
+
+div {
+  padding: 20px;
+}
+
+div .col-12 {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  color: #f5eeee;
+  font-family: "Montserrat";
+  background-color: #2b2626;
+  height: 180px;
+  padding: 20px;
+}
