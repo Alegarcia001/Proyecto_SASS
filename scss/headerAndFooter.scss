@@ -3,7 +3,7 @@ $secundary-color: rgb(43, 38, 38);
 $font-monserrat: 'Montserrat';
 
 
-@mixin caja($padding, $height, $background, $color) {
+@mixin caja($padding, $height, $background, $color) {//Crear una caja de texto
     justify-content: space-around;
     align-items: center;
     padding: $padding;
@@ -15,7 +15,7 @@ $font-monserrat: 'Montserrat';
     padding: $padding;
 }
 
-@mixin background($rutaFoto) {
+@mixin background($rutaFoto) {//Agregar foto como fondo
     background-image: url($rutaFoto);
     background-attachment: fixed;
     background-position: center;
@@ -23,11 +23,11 @@ $font-monserrat: 'Montserrat';
     background-size: cover;
 }
 
-@mixin imagenTam($width, $height){
+@mixin imagenTam($width, $height){//Ajustar el tamaño de las imagenes
     width: $width;
     height: $height;
 }
-@mixin boton($width, $height) {
+@mixin boton($width, $height) {//Ajustar el tamaño de los botones
     width: $width;
     height: $height;
     padding: 20px;
@@ -46,7 +46,7 @@ h3 {
 div {
     padding: 20px;
 
-    .col-12 {
+    .col-12 {//Agregar a una caja en las clases
         @include caja(20px, 180px, $secundary-color, $primary-color);
     }
 }
